@@ -2,7 +2,7 @@ import createNodeHelpers from 'gatsby-node-helpers'
 import fetchData from './fetch'
 import { normalizeFields } from './normalize'
 
-const nodeHelpers = createNodeHelpers({ typePrefix: 'Prismic' })
+const nodeHelpers = createNodeHelpers({ typePrefix: '' })
 const { createNodeFactory, generateNodeId } = nodeHelpers
 
 export const sourceNodes = async (gatsby, pluginOptions) => {

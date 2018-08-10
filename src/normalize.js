@@ -135,7 +135,7 @@ const normalizeSliceField = async args => {
       // and the index of the slice.
       entry.id = `${node.id}__${sliceKey}__${index}`
 
-      const entryNodeType = `${node.type}_${sliceKey}_${entry.slice_type}`
+      const entryNodeType = `${entry.slice_type}`
       const EntryNode = createNodeFactory(entryNodeType, async entryNode => {
         entryNode.items = await normalizeGroupField({
           ...args,
